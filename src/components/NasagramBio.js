@@ -54,7 +54,7 @@ const NasagramBio = ({
             )}
           </p>
 
-          <h4>
+          <h4 style={{ marginTop: 10 }}>
             Shopify is <br />
             extending our mission to Make Commerce Better for Everyone to
             include the whole entire universe. Wanna see more? <br />
