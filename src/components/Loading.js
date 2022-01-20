@@ -5,7 +5,9 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 function CircularProgressWithLabel(props) {
+
   return (
+
     <Box
       sx={{
         position: "relative",
@@ -39,6 +41,7 @@ function CircularProgressWithLabel(props) {
       </Box>
     </Box>
   );
+
 }
 
 CircularProgressWithLabel.propTypes = {
@@ -51,6 +54,8 @@ CircularProgressWithLabel.propTypes = {
 };
 
 export default function Loading() {
+
+  //States
   const [progress, setProgress] = React.useState(10);
 
   React.useEffect(() => {

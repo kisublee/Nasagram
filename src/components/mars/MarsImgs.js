@@ -1,16 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
 import * as React from "react";
 import MarsImg from "./MarsImg";
 import Loading from "../Loading";
 import ImageList from "@mui/material/ImageList";
 
 const MarsImgs = ({ input, isSearched, loading, setLoading }) => {
+
+  //States
   const [marsImages, setMarsImages] = useState([]);
   const [defaultValue, setDefaultValue] = useState("page=1");
+
+  //API key
   const APIKEY = process.env.REACT_APP_API_URL;
 
+  //Fetch
   useEffect(() => {
     const fetchData = async () => {
       console.log("Fetching API for Mars");
@@ -29,6 +33,7 @@ const MarsImgs = ({ input, isSearched, loading, setLoading }) => {
   }, [loading]);
 
   return (
+
     isSearched && (
       <ImageList
         sx={{
@@ -48,6 +53,7 @@ const MarsImgs = ({ input, isSearched, loading, setLoading }) => {
         )}
       </ImageList>
     )
+    
   );
 };
 

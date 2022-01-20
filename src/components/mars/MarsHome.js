@@ -4,12 +4,15 @@ import MarsBackgroundVideo from "../../asset/Mars.mp4";
 import Container from "@mui/material/Container";
 
 export default function MarsHome() {
+
+  // Function to keep the video playing automatically
   const vidRef = useRef(null);
   const handlePlayVideo = () => {
     vidRef.current.play();
   };
 
   return (
+
     <Container
       maxWidth="xl"
       sx={{
@@ -30,5 +33,6 @@ export default function MarsHome() {
         <source src={MarsBackgroundVideo} type="video/mp4" />
       </video>
     </Container>
+    
   );
 }

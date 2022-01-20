@@ -15,6 +15,7 @@ const NasagramBio = ({
   setDefaultDate,
 }) => {
   return (
+
     <Box sx={{ width: "100%" }}>
       <Grid
         container
@@ -83,6 +84,7 @@ const NasagramBio = ({
       </Grid>
     </Box>
   );
+  
 };
 
 export default NasagramBio;

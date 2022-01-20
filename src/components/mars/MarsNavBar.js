@@ -6,7 +6,9 @@ import Container from "@mui/material/Container";
 import { Link } from "react-router-dom";
 
 const MarsNavBar = () => {
+
   return (
+
     <AppBar
       position="static"
       color="secondary"
@@ -47,6 +49,7 @@ const MarsNavBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+  
   );
 };
 export default MarsNavBar;

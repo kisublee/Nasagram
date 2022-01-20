@@ -9,7 +9,10 @@ import * as React from "react";
 import { useState } from "react";
 import NotFoundImage from "../../asset/not-found.jpeg";
 import ImageListItem from "@mui/material/ImageListItem";
+
 const MarsImg = ({ image }) => {
+
+  //States
   const [liked, setToggle] = useState(false);
 
   const favoriteIconToggler = () => {
@@ -17,6 +20,7 @@ const MarsImg = ({ image }) => {
   };
 
   return (
+
     <ImageListItem key={image.id}>
       <Card
         sx={{
@@ -76,6 +80,7 @@ const MarsImg = ({ image }) => {
         </CardActions>
       </Card>
     </ImageListItem>
+
   );
 };
 

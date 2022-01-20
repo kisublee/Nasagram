@@ -7,25 +7,31 @@ import MarsBio from "./MarsBio";
 import MarsSearchBar from "./MarsSearchBar";
 import MarsImgs from "./MarsImgs";
 import { useState } from "react";
+
 export default function MarsRover() {
+  
+  //Setting dark mode theme with MUI
   const theme = createTheme({
     palette: {
       mode: "dark",
     },
   });
 
+  //States
   const [input, setInput] = useState({
     camera: "",
     search: "",
   });
   const [loading, setLoading] = useState(false);
-
   const [isSearched, setIsSearched] = useState(false);
+
+  // Event Listener 
   const handleChange = (event) => {
     setInput({ ...input, [event.target.id]: event.target.value });
   };
 
   return (
+
     <React.Fragment>
       <CssBaseline />
       <ThemeProvider theme={theme}>
@@ -45,5 +51,6 @@ export default function MarsRover() {
         />
       </ThemeProvider>
     </React.Fragment>
+    
   );
 }

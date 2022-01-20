@@ -13,13 +13,18 @@ import Loading from "./Loading";
 import ErrorMsg from "./ErrorMsg";
 
 export default function Nasagram() {
+
+ //States
   const [spaceImages, setSpaceImages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [date, setDate] = useState("");
-  const APIKEY = process.env.REACT_APP_API_URL;
   const [defaultDate, setDefaultDate] = useState("YYYY-MM-DD");
   const [isAlerted, setIsAlerted] = useState(false);
 
+  //API key
+  const APIKEY = process.env.REACT_APP_API_URL;
+
+  //Fetch
   useEffect(() => {
     const fetchData = async () => {
       console.log("Fetching API for Space Images from NASA");
@@ -36,6 +41,7 @@ export default function Nasagram() {
   }, [loading]);
 
   return (
+
     <React.Fragment>
       <CssBaseline />
       {isAlerted ? (
@@ -77,5 +83,6 @@ export default function Nasagram() {
       </Container>
       <Divider sx={{ marginTop: 3 }} />
     </React.Fragment>
+    
   );
 }

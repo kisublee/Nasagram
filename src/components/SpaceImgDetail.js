@@ -3,10 +3,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const SpaceImgDetail = () => {
-  const APIKEY = process.env.REACT_APP_API_URL;
+
+  //States
   const [singleImage, setSingleImage] = useState([]);
   const { date } = useParams();
 
+  //API key
+  const APIKEY = process.env.REACT_APP_API_URL;
+
+  //Fetch
   useEffect(() => {
     const fetchData = async () => {
       console.log("Fetching API for One Single Image!");

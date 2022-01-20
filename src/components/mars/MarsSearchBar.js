@@ -2,7 +2,6 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 import NativeSelect from "@mui/material/NativeSelect";
 import InputBase from "@mui/material/InputBase";
 import Box from "@mui/material/Box";
@@ -43,12 +42,15 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function MarsSearchBar({ input, handleChange, setIsSearched }) {
+
+  //Event Listener
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSearched(true);
   };
 
   return (
+
     <Box
       item
       sx={{
@@ -110,5 +112,6 @@ export default function MarsSearchBar({ input, handleChange, setIsSearched }) {
         Your selected date is: {input.search} and camera is: {input.camera}
       </Typography>
     </Box>
+    
   );
 }

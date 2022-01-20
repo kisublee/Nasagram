@@ -3,11 +3,14 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
 const ErrorMsg = ({ setIsAlerted }) => {
+
+  //Event Listener
   const errorHandling = () => {
     setIsAlerted(false);
   };
 
   return (
+
     <Stack
       sx={{
         width: "100%",
@@ -42,6 +45,7 @@ const ErrorMsg = ({ setIsAlerted }) => {
         Please enter a valid input. YYYY-MM-DD. ex: 2022-01-10
       </Alert>
     </Stack>
+  
   );
 };
 

@@ -12,8 +12,11 @@ import NotFoundImage from "../asset/not-found.jpeg";
 import { Link } from "react-router-dom";
 
 const SpaceImg = ({ image }) => {
+
+  //States
   const [liked, setToggle] = useState(false);
 
+  //Event Listener
   const favoriteIconToggler = () => {
     setToggle(!liked);
   };

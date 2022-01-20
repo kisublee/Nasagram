@@ -53,15 +53,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const SearchBar = ({ date, setDate, setLoading, isAlerted, setIsAlerted }) => {
-  const handleChange = (e) => {
-    setDate((date = e.target.value));
-    inputValidator(date);
-  };
 
+  // Error handling function
   const inputValidator = (date) => {
-    const validInput = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-"];
-    const valid = ["0123456789-"];
-
+  
     if (date.length >= 4 && Number(date) > 2022) {
       setIsAlerted(true);
     }
@@ -103,6 +98,7 @@ const SearchBar = ({ date, setDate, setLoading, isAlerted, setIsAlerted }) => {
     }
   };
 
+  //Event Listener
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(false);
@@ -111,7 +107,13 @@ const SearchBar = ({ date, setDate, setLoading, isAlerted, setIsAlerted }) => {
     }
   };
 
+  const handleChange = (e) => {
+    setDate((date = e.target.value));
+    inputValidator(date);
+  };
+
   return (
+    
     <form onSubmit={handleSubmit}>
       <Search onChange={handleChange}>
         <SearchIconWrapper>
@@ -124,6 +126,7 @@ const SearchBar = ({ date, setDate, setLoading, isAlerted, setIsAlerted }) => {
         />
       </Search>
     </form>
+
   );
 };
 
