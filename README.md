@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Welcome to Nasagram
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    [Nasagram](https://priceless-dubinsky-f10980.netlify.app/#/)
 
-## Available Scripts
+This project is for space lovers.
 
-In the project directory, you can run:
+**Shopify** is extending our mission to Make Commerce Better for Everyone to include the whole entire universe.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Users can search up stunning astronomy images organized by NASA
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  1. When users enter a date, users get all photos from the inputted date. For example, if 2021-12-30 is entered, photos from 2021-12-30 to the current day will be displayed.
 
-### `npm test`
+  2. Upon clicking a photo, users will be automatically directed to other page where they can see that specific image in full size. (For the best experience, please enter full screen)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- scrollbar feature is implemented for each image's description.
 
-### `npm run build`
+- Loading animation is implemented.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Users can also find Mars Rover Photos by NASA by simply clicking **Explore Mars Rover Photos** from Nasagram's bio.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- For Mars Rover Photos, not only users can search by date, but also by camera type.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Each image offers descriptive data such as title, date, description, and status for Mars Rover images.
 
-### `npm run eject`
+- Users can like an image
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Users can unlike an image
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- When invalid input is entered, the app alerts immediately for users.
