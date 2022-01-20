@@ -7,7 +7,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import NonFavoriteIcon from "@mui/icons-material/FavoriteBorder";
 import * as React from "react";
 import { useState } from "react";
-import NotFoundImage from "../../assets/not-found.jpeg";
+import NotFoundImage from "../../asset/not-found.jpeg";
 import ImageListItem from "@mui/material/ImageListItem";
 const MarsImg = ({ image }) => {
   const [liked, setToggle] = useState(false);

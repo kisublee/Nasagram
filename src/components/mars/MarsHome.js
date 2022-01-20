@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useRef } from "react";
-import MarsBackgroundVideo from "../../assets/Mars.mp4";
+import MarsBackgroundVideo from "../../asset/Mars.mp4";
 import Container from "@mui/material/Container";
 
 export default function MarsHome() {

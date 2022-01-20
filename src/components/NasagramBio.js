@@ -1,7 +1,7 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import BioIcon from "../assets/bioIcon.png";
+import BioIcon from "../asset/bioIcon.png";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import MuiLink from "@mui/material/Link";

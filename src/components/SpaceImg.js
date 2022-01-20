@@ -8,7 +8,7 @@ import NonFavoriteIcon from "@mui/icons-material/FavoriteBorder";
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import { useState } from "react";
-import NotFoundImage from "../assets/not-found.jpeg";
+import NotFoundImage from "../asset/not-found.jpeg";
 
 const SpaceImg = ({ image }) => {
   const [liked, setToggle] = useState(false);
