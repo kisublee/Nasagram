@@ -9,6 +9,7 @@ import * as React from "react";
 import Grid from "@mui/material/Grid";
 import { useState } from "react";
 import NotFoundImage from "../asset/not-found.jpeg";
+import { Link } from "react-router-dom";
 
 const SpaceImg = ({ image }) => {
   const [liked, setToggle] = useState(false);
@@ -28,27 +29,29 @@ const SpaceImg = ({ image }) => {
         }}
       >
         <CardActionArea>
-          {image.hdurl ? (
-            <CardMedia
-              component="img"
-              height="350"
-              image={image.hdurl}
-              alt={image.title}
-              sx={{
-                "&:hover": {
-                  backgroundColor: "info.main",
-                  opacity: [0.9, 0.8, 0.7],
-                },
-              }}
-            />
-          ) : (
-            <CardMedia
-              component="img"
-              height="350"
-              image={NotFoundImage}
-              alt={image.title}
-            />
-          )}
+          <Link to={`detail/${image.date}`}>
+            {image.hdurl ? (
+              <CardMedia
+                component="img"
+                height="350"
+                image={image.hdurl}
+                alt={image.title}
+                sx={{
+                  "&:hover": {
+                    backgroundColor: "info.main",
+                    opacity: [0.9, 0.8, 0.7],
+                  },
+                }}
+              />
+            ) : (
+              <CardMedia
+                component="img"
+                height="350"
+                image={NotFoundImage}
+                alt={image.title}
+              />
+            )}
+          </Link>
           <CardContent>
             <Typography
               gutterBottom
