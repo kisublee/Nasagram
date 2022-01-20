@@ -12,7 +12,7 @@
 
   1. A date-picker to be able to browse images starting from a specific date is implemented.
 
-  2. Upon clicking a photo, users will be automatically directed to other page where they can see that specific image in full size. (For the best experience, please enter full screen)
+  2. Upon clicking a photo, users will be automatically directed to other page where they can see that specific image in full size. (For the best experience, please enter full screen) By clicking the full-size image, users can go back to the home page.
 
   3. By default, the app displays images from 2022-01-07 to the present.
 
@@ -24,9 +24,9 @@
 
 - Users can also find Mars Rover Photos by NASA by simply clicking **Explore Mars Rover Photos** from Nasagram's bio.
 
-- For Mars Rover Photos, not only users can search by date, but also by camera type.
+- For Mars Rover Photos, not only users can search by earth date, but also by camera type.(By default, when users click the search button, it displays a few wonderful images)
 
-- Each image offers descriptive data such as title, date, description, and status for Mars Rover images.
+- Each image offers descriptive data such as title, date, description, and even status for Mars Rover images.
 
 - Users can like an image
 
@@ -38,4 +38,24 @@
 
 ---
 
-##
+## Features in progress
+
+1. The app is responsive for desktop and I am working on making it a mobile-responsive app as well.
+
+2. Refactor the error handling function.
+
+3. For Mars Rover Photos, error handling feature has not been implemented yet. The NASA's Mars Rover API offers querying by earth date, but most of earth dates don't have any images when searched with a specific camera.
+
+4. Add a function that changes the number of the posts to 0 when invalid input is entered.
+
+---
+
+## What is next?
+
+- Add share link so users can share their favorite images with others.
+
+- Add a page where users can store their favorite images.
+
+- Add a color switch mode so that users can customize the app based on their favorite color.
+
+- Add a random image generator feature.
