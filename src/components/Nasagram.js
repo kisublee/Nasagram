@@ -40,6 +40,7 @@ export default function Nasagram() {
     fetchData();
   }, [loading]);
 
+
   return (
 
     <React.Fragment>

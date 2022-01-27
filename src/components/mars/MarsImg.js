@@ -15,6 +15,7 @@ const MarsImg = ({ image }) => {
   //States
   const [liked, setToggle] = useState(false);
 
+  //Event Listener 
   const favoriteIconToggler = () => {
     setToggle(!liked);
   };

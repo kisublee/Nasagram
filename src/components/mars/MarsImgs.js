@@ -53,7 +53,7 @@ const MarsImgs = ({ input, isSearched, loading, setLoading }) => {
         )}
       </ImageList>
     )
-    
+  
   );
 };
 
