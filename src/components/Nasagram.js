@@ -35,7 +35,7 @@ export default function Nasagram() {
       );
       setSpaceImages(res.data);
       setLoading(true);
-      setDefaultDate("2022-01-07");
+      setDefaultDate("2022-01-17");
     };
     fetchData();
   }, [loading]);
