@@ -56,7 +56,7 @@ const NasagramBio = ({
           </p>
 
           <h4 style={{ marginTop: 10 }}>
-       
+            Kimazon is <br />
             extending our mission to Make Commerce Better for Everyone to
             include the whole entire universe. Wanna see more? <br />
             check out our{" "}
@@ -71,14 +71,14 @@ const NasagramBio = ({
             </Link>
           </h4>
           <MuiLink
-            href="https://www.shopify.com/about"
+            href="https://api.nasa.gov/"
             color="primary.main"
             underline="none"
             rel="noopener"
             target="_blank"
             fontWeight="bold"
           >
-            www.shopify.com/about
+            https://api.nasa.gov/
           </MuiLink>
         </Grid>
       </Grid>
