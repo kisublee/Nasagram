@@ -2,7 +2,7 @@
 
 [Nasagram](https://priceless-dubinsky-f10980.netlify.app/#/)
 
-**Shopify** is extending our mission to Make Commerce Better for Everyone to include the whole entire universe.
+**Kimazon** is extending our mission to Make Commerce Better for Everyone to include the whole entire universe.
 
 ---
 
